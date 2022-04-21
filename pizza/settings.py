@@ -42,9 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'authentication.apps.AuthenticationConfig',
-    'orders.apps.OrdersConfig',
-
+    # 'authentication.apps.AuthenticationConfig',
+    # 'orders.apps.OrdersConfig',
+    'authentication',
+    'orders',
     # 3rd party
     'rest_framework',
 ]
