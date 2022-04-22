@@ -55,8 +55,9 @@ INSTALLED_APPS = [
 # auth user model settings
 AUTH_USER_MODEL = 'authentication.User'
 
-
+'''
 REST_FRAMEWORK = {
+
     'NON_FIELD_ERRORS_KEY'='errors',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -67,8 +68,11 @@ SIMPLE_JWT = {
     # 'AUTH_HEADER_TYPES':('Bearer',),
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-}
 
+    'NON_FIELD_ERRORS_KEY':'errors'
+
+}
+'''
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
